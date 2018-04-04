@@ -1,0 +1,22 @@
+<templateSet group="Java">
+  <template name="sep" value="&#10;// ----------------------------------------&#10;" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="seplabel" value="&#10;// ----------------------------------------&#10;// $LABEL$&#10;" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="LABEL" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="fromval" value="public static $ENUM$ fromValue(String value) {&#10;    return Arrays.stream($ENUM$.values())&#10;            .filter(e -&gt; e.value.equals(value))&#10;            .findFirst()&#10;            .orElseThrow(() -&gt; new IllegalArgumentException(&quot;Unknown $ENUM$ value: &quot; + value));&#10;}" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="ENUM" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+</templateSet>
