@@ -1,2 +1,17 @@
-config/options
-config/plugins
+# config/plugins
+# config/extensions
+# config/consoles
+# config/tasks
+# config/options
+# !config/options/laf.xml
+# !config/options/ui.lnf.xml
+
+system
+config
+
+!config/codestyles
+!config/colors
+!config/keymaps
+!config/options/ui.lnf.xml
+!config/options/laf.xml
+!config/templates
